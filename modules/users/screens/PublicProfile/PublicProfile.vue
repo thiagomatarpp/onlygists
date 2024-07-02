@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import PublicHeadline from '~/modules/users/screens/components/PublicHeadline/PublicHeadline.vue'
-import WidgetGroup from '~/modules/reports/components/Widgets/Group/Group.vue'
-import WidgetCondensed from '~/modules/reports/components/Widgets/Condensed/Condensed.vue'
+import PublicHeadline from '@/modules/users/screens/components/PublicHeadline/PublicHeadline.vue'
+import WidgetGroup from '@/modules/reports/components/Widgets/Group/Group.vue'
+import WidgetCondensed from '@/modules/reports/components/Widgets/Condensed/Condensed.vue'
+import WidgetGroupLoader from '@/modules/reports/components/Widgets/Group/Loader.vue'
 </script>
 
 <template>
