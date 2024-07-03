@@ -14,4 +14,6 @@ import WidgetGroupLoader from '@/modules/reports/components/Widgets/Group/Loader
       <WidgetCondensed :value="3" label="Gists pagos" />
     </WidgetGroupLoader>
   </WidgetGroup>
+
+  <WidgetDefault title="Todos os gists"> gists </WidgetDefault>
 </template>
