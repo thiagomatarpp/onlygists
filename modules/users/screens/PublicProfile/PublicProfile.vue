@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import PublicHeadline from '@/modules/users/screens/components/PublicHeadline/PublicHeadline.vue'
 import WidgetGroup from '@/modules/reports/components/Widgets/Group/Group.vue'
-import WidgetCondensed from '@/modules/reports/components/Widgets/Condensed/Condensed.vue'
 import WidgetGroupLoader from '@/modules/reports/components/Widgets/Group/Loader.vue'
+import WidgetCondensed from '@/modules/reports/components/Widgets/Condensed/Condensed.vue'
+import GistsCardGroup from '@/modules/gists/components/Card/Group/Group.vue'
 </script>
 
 <template>
@@ -15,5 +16,7 @@ import WidgetGroupLoader from '@/modules/reports/components/Widgets/Group/Loader
     </WidgetGroupLoader>
   </WidgetGroup>
 
-  <WidgetDefault title="Todos os gists"> gists </WidgetDefault>
+  <WidgetDefault title="Todos os gists">
+    <GistsCardGroup>gists</GistsCardGroup>
+  </WidgetDefault>
 </template>
