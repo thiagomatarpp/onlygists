@@ -57,12 +57,20 @@ export default defineNuxtConfig({
   },
 
   googleFonts: {
-    base64: true,
-    fontsDir: 'assets/fonts',
-    overwriting: true,
     families: {
-      Inter: [300, 500, 800],
+      Inter: {
+        wght: [300, 500, 800],
+      },
     },
+    subsets: ['latin'],
+    display: 'swap',
+    prefetch: false,
+    preconnect: false,
+    preload: false,
+    download: true,
+    base64: false,
+    fontsDir: 'assets/fonts',
+    // overwriting: true,
   },
 
   primevue: {
