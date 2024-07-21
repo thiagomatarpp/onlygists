@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     'nuxt-primevue',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
-    // '@nuxtjs/supabase',
+    '@nuxtjs/supabase',
     // '@nuxtjs/color-mode',
     // '@nuxtjs/seo',
     // '@vue-email/nuxt',
@@ -39,14 +39,14 @@ export default defineNuxtConfig({
     },
   },
 
-  // supabase: {
-  //   redirect: false,
-  // },
+  supabase: {
+    redirect: false,
+  },
 
   runtimeConfig: {
-    stripeProudctId5BRL: process.env.STRIPE_PRODUCT_ID_5BRL,
-    stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET,
-    resendKey: process.env.RESEND_KEY,
+    // stripeProudctId5BRL: process.env.STRIPE_PRODUCT_ID_5BRL,
+    // stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET,
+    // resendKey: process.env.RESEND_KEY,
 
     public: {
       nodeEnv: process.env.NODE_ENV,

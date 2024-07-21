@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import SocialForm from '~/modules/auth/components/SocialForm.vue'
 const loading = ref<boolean>(false)
+const services = useServices();
 const handlerGithubLogin = async () => {
   loading.value = true
-  // @TODO Call API
+  await services.auth.signInWithGithub();
 }
 </script>
 
